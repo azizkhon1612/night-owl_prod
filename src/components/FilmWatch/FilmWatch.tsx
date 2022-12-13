@@ -24,7 +24,6 @@ import SidebarMini from "../Common/SidebarMini";
 import Skeleton from "../Common/Skeleton";
 import Title from "../Common/Title";
 import Footer from "../Footer/Footer";
-import Comment from "./Comment/Comment";
 import SeasonSelection from "./SeasonSelection";
 
 interface FilmWatchProps {
@@ -251,7 +250,7 @@ const FilmWatch: FunctionComponent<FilmWatchProps & getWatchReturnedType> = ({
               </ReadMore>
             )}
           </div>
-          <Comment media_type={media_type} id={detail?.id} />
+          
         </div>
         <div className="shrink-0 md:max-w-[400px] w-full relative px-6">
           {!isMobile && <SearchBox />}
