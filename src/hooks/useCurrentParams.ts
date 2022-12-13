@@ -1,10 +1,10 @@
 import { useSearchParams } from "react-router-dom";
-import { Supported_Query } from "../shared/const";
+import { SUPPORTED_QUERY } from "../shared/const";
 
 export const useCurrentParams = () => {
   const [searchParam] = useSearchParams();
 
-  const currentSearchParams = JSON.parse(JSON.stringify(Supported_Query)) as {
+  const currentSearchParams = JSON.parse(JSON.stringify(SUPPORTED_QUERY)) as {
     [key: string]: string[];
   };
 
